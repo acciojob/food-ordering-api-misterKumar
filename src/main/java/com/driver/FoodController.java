@@ -16,6 +16,8 @@ public class FoodController {
 
     public FoodController() {
     	// your code goes here
+        menu=new Menu();
+        currentOrder=new Order();
     }
 
     @GetMapping("/menu")
@@ -27,6 +29,8 @@ public class FoodController {
     @PostMapping("/order/{itemId}")
     public void placeOrder(@PathVariable int itemId) {
     	// your code goes here
+        Food item = menu.getMenuItemById(itemId);
+        currentOrder.addItem(item);
     }
 
     @GetMapping("/order")
