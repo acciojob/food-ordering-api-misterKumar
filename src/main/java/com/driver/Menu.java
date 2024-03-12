@@ -10,9 +10,6 @@ public class Menu {
     	// your code goes here
         menuItems=new ArrayList<>();
         menuItems.add(new Food(1, "Burger", 5.99));
-        menuItems.add(new Food(2, "Pizza", 8.99));
-        menuItems.add(new Food(3, "Salad", 6.49));
-        menuItems.add(new Food(4, "Fries", 2.99));
 
     }
 
