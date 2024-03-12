@@ -9,7 +9,7 @@ public class Menu {
     public Menu() {
     	// your code goes here
         menuItems=new ArrayList<>();
-        menuItems.add(new Food(1, "Burger", 5.99));
+        //menuItems.add(new Food(1, "Burger", 5.99));
 
     }
 
